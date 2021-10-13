@@ -154,7 +154,7 @@ const NavBar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Listings</NavLinksLoggedIn>
+                                >MyFiles</NavLinksLoggedIn>
                             </NavItem>
                             {/* <NavItem>
                                 <NavLinks 
@@ -175,7 +175,7 @@ const NavBar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Request Help</NavLinksLoggedIn>
+                                >Organize</NavLinksLoggedIn>
                             </NavItem>
                             
                             <NavItem>
@@ -186,7 +186,7 @@ const NavBar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Join VIP</NavLinksLoggedIn>
+                                >Upgrade</NavLinksLoggedIn>
                             </NavItem>
                             <NavItem>
                                 <NavLinksLoggedIn 

@@ -7,7 +7,7 @@ import HeroSection from '../components/HeroSection'
 import NavBar from '../components/NavBar'
 // import NavBarLoggedIn from '../components/NavBar/indexLoggedIn'
 // import Services from '../components/Services'
-import Listings from '../components/Listings'
+import DropZone from '../components/DropZone'
 import SideBar from '../components/SideBar'
 
 import Alert from '@mui/material/Alert';
@@ -69,7 +69,7 @@ const Home = () => {
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle} />
           {/* <NavBarLoggedIn toggle={toggle}/> */}
-          <Listings />
+          <DropZone />
           {/* <h1>Welcome {user.get("username")}</h1> */}
           {/* <button 
             type='submit'
