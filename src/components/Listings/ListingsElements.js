@@ -9,7 +9,7 @@ export const ListingsSearchContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000C30;
+    background: #460700;
 
     /* @media screen and (max-width: 768px) {
         height: 1100px;

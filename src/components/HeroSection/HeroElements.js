@@ -43,20 +43,21 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -100px;
 `
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 34px;
+    font-size: 34x;
     text-align: center;
     margin-bottom: 3px;
 
     @media screen and (max-width: 768px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 28px;
     }
 `
 

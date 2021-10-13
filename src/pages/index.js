@@ -1,4 +1,4 @@
-import React, {useState } from 'react'
+import React, {useState} from 'react'
 import Footer from '../components/Footer'
 // import { BrowserRouter as Router } from 'react-router-dom'
 import HeroSection from '../components/HeroSection'
@@ -11,7 +11,15 @@ import Listings from '../components/Listings'
 import SideBar from '../components/SideBar'
 
 import Alert from '@mui/material/Alert';
+// import AlertTitle from '@mui/material/AlertTitle';
+// import IconButton from '@mui/material/IconButton';
+// import CloseIcon from '@mui/icons-material/Close';
+// import Collapse from '@mui/material/Collapse';
+// import { useButton } from '@mui/core/ButtonUnstyled';
+
+// import { useHistory } from "react-router-dom"
 import { useMoralis } from "react-moralis";
+
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +33,6 @@ const Home = () => {
     const { isAuthenticated } = useMoralis();
     // const { auth, authError, logout, isAuthenticating } = useMoralis();
     const { authError } = useMoralis();
-
 
     if (!isAuthenticated) {
     return (
@@ -48,11 +55,11 @@ const Home = () => {
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle} />
             <HeroSection />
-            <InfoSection {...homeObjectOne} />
+            {/* <InfoSection {...homeObjectOne} />
             <InfoSection {...homeObjectTwo} />
             <InfoSection {...homeObjectThree} />
             <Services />
-            <InfoSection {...homeObjectFour} />
+            <InfoSection {...homeObjectFour} /> */}
             <Footer />
         </>
     )}

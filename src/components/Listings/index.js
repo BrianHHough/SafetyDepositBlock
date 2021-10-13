@@ -26,9 +26,6 @@ import PL__Python from "../../assets/programming_logos/Python-logo.png";
 import { useMoralis } from "react-moralis";
 
 
-// import { ethers } from 'ethers';
-// import axios from 'axios';
-
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
       backgroundColor: '#44b700',
@@ -102,7 +99,7 @@ const Services = () => {
               </div>
 
         </ListingsSearchContainer>
-
+        
         <ServicesContainerTop>
         </ServicesContainerTop>
 
@@ -126,7 +123,7 @@ const Services = () => {
                                 fontSize: "2.25rem",
                             
                             }}
-                            alt="HelpMeDev"
+                            alt="SafetyDepositBlock"
                             src="/broken-image.jpg"
                             name={user.attributes.username}
                             >
@@ -220,7 +217,7 @@ const Services = () => {
                                 fontSize: "2.25rem",
                             
                             }}
-                            alt="HelpMeDev"
+                            alt="Example"
                             src="/broken-image.jpg"
                             name={user.attributes.username}
                             >
@@ -311,7 +308,7 @@ const Services = () => {
                                 fontSize: "2.25rem",
                             
                             }}
-                            alt="HelpMeDev"
+                            alt="Example"
                             src="/broken-image.jpg"
                             name={user.attributes.username}
                             >

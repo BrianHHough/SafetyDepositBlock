@@ -58,7 +58,7 @@ const NavBarLoggedIn = ({ toggle }) => {
                             onClick={toggleHome}
                             className="NavLogoGradient"
                             >
-                            <h2>HelpMeDev</h2>
+                            <h2>SafetyDepositBlock</h2>
                         </NavLogo>
 
                         <MobileIcon 

@@ -85,7 +85,7 @@ export const SocialMediaWrap = styled.div`
 
 export const SocialLogo = styled(Link)`
     background-color: #000;
-    background-image: linear-gradient(90deg, #00F260, #43A1FF);
+    background-image: linear-gradient(90deg, #f5af19, #f12711);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 

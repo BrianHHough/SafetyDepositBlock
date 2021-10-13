@@ -97,7 +97,7 @@ const ListingsCard = () => {
                     fontSize: "2.25rem",
                 
                 }}
-                alt="HelpMeDev"
+                alt="Example"
                 src="/broken-image.jpg"
                 name={user.attributes.username}
                 >

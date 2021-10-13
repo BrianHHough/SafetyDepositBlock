@@ -42,7 +42,7 @@ const Footer = () => {
 
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle> Listings</FooterLinkTitle>
+                            <FooterLinkTitle> Web3 Storage</FooterLinkTitle>
                                 <FooterLink to="/">Submit Listing</FooterLink>
                                 <FooterLink to="/">Find Developers</FooterLink>
                                 <FooterLink to="/">Promote Your Project</FooterLink>
