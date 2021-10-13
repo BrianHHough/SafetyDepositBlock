@@ -1,15 +1,41 @@
-# Basic Sample Hardhat Project
+# SafetyDepositBlock
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Filebase & Akash Network Hackathon
 
-Try running some of the following tasks:
+Focused on providing mobile data portability and encrypted file storage for the decentralized web.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+## Tech Stack
+
+Front-End: ReactJS
+API Layer: Axios
+File Storage: Filebase
+Deployment: Akash Network
+
+## Project Commands
+
+**Important:** need to use yarn and there needs to be no warnings during deployment
+
+**START:** `yarn start`
+**BUILD:** `yarn build`
+
+**INSTALL DEPENDENCY:** `yarn add ____`
+
+## Helpful Documentation
+
+### React-DropZone Package
+
+- npm package link: https://www.npmjs.com/package/react-dropzone
+- long page of documentation: https://react-dropzone.js.org/
+
+How to add different types of files:
+
+- GitHub issue on this: https://github.com/felixrieseberg/React-Dropzone-Component/issues/164
+- use `application/pdf` or
+
+### React-Dropzone-Uploader Package
+
+- npm package link: https://www.npmjs.com/package/react-dropzone-uploader
+
+### html5-file-selector Package
+
+`npm install html5-file-selector`

@@ -88,7 +88,7 @@ const NavBarLoggedIn = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Listings</NavLinks>
+                                >MyFiles</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks 
@@ -98,7 +98,7 @@ const NavBarLoggedIn = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Listings</NavLinks>
+                                >MyFiles</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks 

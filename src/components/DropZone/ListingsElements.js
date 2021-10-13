@@ -43,8 +43,10 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #0045AB;
-
+    background-color: #000;
+    background-image: linear-gradient(45deg, #f5af19, #f12711);
+    padding-top: 40px;
+    padding-bottom: 40px;
     /* @media screen and (max-width: 768px) {
         height: 1100px;
     } */
