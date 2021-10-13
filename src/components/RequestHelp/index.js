@@ -105,7 +105,7 @@ const ProfileSection = () => {
                             fontSize: "2.25rem",
                         
                         }}
-                        alt="HelpMeDev"
+                        alt="Example"
                         src="/broken-image.jpg"
                         name={user.attributes.username}
                         >
@@ -262,7 +262,7 @@ const ProfileSection = () => {
                 height: "60px",
                 position: "absolute",
                 marginTop: "11px",
-                marginLeft: "-35px",
+                marginLeft: "-25px",
             }}
             >
 

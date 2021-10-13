@@ -19,7 +19,7 @@ export const Nav = styled.nav`
     transition: background 2s; /* For modern browsers */
 
     @keyframes slowshift {
-        /* from {background-color: #6f0b00;}
+        /* from {background-color: #870d00;}
         to {background-color: red;} */
 
         0% {
@@ -111,12 +111,9 @@ export const NavLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
 
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: linear-gradient(90deg, #f5af19, #f12711);
-        color: white;
-        box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
-        animation: none;
+    &.active {
+        border-bottom: 3px solid #00F260;
+        font-weight: 600;
     }
 `;
 
@@ -169,7 +166,7 @@ export const NavBtnLinkSignIn = styled.div`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: linear-gradient(90deg, #f5af19, #f12711);
-        color: white;
+        color: #010606;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;
     }
@@ -204,10 +201,10 @@ export const NavBtnLinkSignIn = styled.div`
 
 export const NavBtnLinkToProfile = styled(LinkRouter)`
     border-radius: 50px;
-    background: linear-gradient(90deg, #00F260, #43A1FF);
+    background: linear-gradient(90deg, #f5af19, #f12711);
     white-space: nowrap;
     padding: 10px 22px;
-    color: #002E5C;
+    color: #870d00;
     font-size: 16px;
     font-weight: 600;
     outline: none;
@@ -219,7 +216,7 @@ export const NavBtnLinkToProfile = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: linear-gradient(90deg, #00F260, #43A1FF);
+        background: linear-gradient(90deg, #f5af19, #f12711);
         color: #010606;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;
@@ -255,10 +252,10 @@ export const NavBtnLinkToProfile = styled(LinkRouter)`
 
 export const NavBtnLinkSignOut = styled.div`
     border-radius: 50px;
-    background: linear-gradient(90deg, #00F260, #43A1FF);
+    background: linear-gradient(90deg, #f5af19, #f12711);
     white-space: nowrap;
     padding: 10px 22px;
-    color: #002E5C;
+    color: #870d00;
     font-size: 16px;
     font-weight: 600;
     outline: none;
@@ -270,7 +267,7 @@ export const NavBtnLinkSignOut = styled.div`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: linear-gradient(90deg, #00F260, #43A1FF);
+        background: linear-gradient(90deg, #f5af19, #f12711);
         color: #010606;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;
@@ -304,7 +301,7 @@ export const NavBtnLinkSignOut = styled.div`
 
 `;
 
-export const NavBtnLink = styled.nav`
+export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background: linear-gradient(90deg, #f5af19, #f12711);
     white-space: nowrap;
@@ -321,7 +318,7 @@ export const NavBtnLink = styled.nav`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: linear-gradient(90deg, #00F260, #43A1FF);
+        background: linear-gradient(90deg, #f5af19, #f12711);
         color: #010606;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;

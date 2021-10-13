@@ -58,7 +58,8 @@ export const ButtonMetamask = styled (Link)`
     background: ${({primary}) => (primary ? 'linear-gradient(90deg, #f5af19, #f12711);' : 'linear-gradient(90deg, #f5af19, #f12711);')};
     white-space: nowrap;
     padding: 24px 64px;
-    padding: ${({dark}) => (dark ? '#010606' : '#fff')};
+    color: white;
+    /* padding: ${({dark}) => (dark ? '#010606' : '#fff')}; */
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
@@ -74,6 +75,7 @@ export const ButtonMetamask = styled (Link)`
         background: ${({primary}) => (primary ? 'linear-gradient(90deg, #f5af19, #f12711);' : 'linear-gradient(90deg, #f5af19, #f12711);')};
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;
+        color: #010606;
     }
 
     @-webkit-keyframes pulse {

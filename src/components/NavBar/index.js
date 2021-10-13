@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Nav, NavBarContainer, NavBtnLinkSignIn, NavBtnLink, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinksLoggedIn, NavBtn, NavBtnLinkToProfile } from './NavBarElements';
+import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinksLoggedIn, NavBtn, NavBtnLinkSignIn, NavBtnLinkToProfile } from './NavBarElements';
 import '../../App.css';
 import {animateScroll as scroll } from 'react-scroll'
 import MenuIcon from '@mui/icons-material/Menu';
@@ -19,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
 const NavBar = ({ toggle }) => {
     const classes = useStyles();
     const [scrollNav, setScrollNav] = useState(false);
-    const { authenticate } = useMoralis();
+    const { authenticate, isAuthenticating } = useMoralis();
     // const { isAuthenticated, user } = useMoralis();
     const { isAuthenticated } = useMoralis();
-    const { isAuthenticating } = useMoralis();
+    // const { logout, isAuthenticating } = useMoralis();
 
     const changeNav = () => {
         if(window.scrollY >= 80) {
@@ -81,7 +81,7 @@ const NavBar = ({ toggle }) => {
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Listings</NavLinks>
+                                >Web3 Storage</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks 
@@ -106,19 +106,15 @@ const NavBar = ({ toggle }) => {
                         </NavMenu>
 
                         <NavBtn>
-                            <NavBtnLink 
-                            // to="/signin"
+                            {/* <NavBtnLink to="/signin">
+                            Log In
+                            </NavBtnLink> */}
+                            <NavBtnLinkSignIn 
                             onClick={() => authenticate()}
                             isLoading={isAuthenticating}
                             >
                             Log In
-                            </NavBtnLink>
-                            {/* <NavBtnLinkSignIn 
-                            onClick={() => authenticate()}
-                            isLoading={isAuthenticating}
-                            >
-                            Log In
-                            </NavBtnLinkSignIn> */}
+                            </NavBtnLinkSignIn>
                         </NavBtn> 
 
                     </NavBarContainer>
