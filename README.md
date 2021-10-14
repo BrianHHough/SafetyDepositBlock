@@ -1,5 +1,7 @@
 # SafetyDepositBlock
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a56afe12-e66a-485c-b998-55286790c310/deploy-status)](https://app.netlify.com/sites/safetydepositblock/deploys)
+
 Filebase & Akash Network Hackathon
 
 Focused on providing mobile data portability and encrypted file storage for the decentralized web.
