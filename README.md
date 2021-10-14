@@ -36,6 +36,9 @@ How to add different types of files:
 
 - npm package link: https://www.npmjs.com/package/react-dropzone-uploader
 
+Really helpful guide:
+https://www.freakyjolly.com/react-upload-files-using-react-dropzone/
+
 ### html5-file-selector Package
 
 `npm install html5-file-selector`
