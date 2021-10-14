@@ -110,7 +110,7 @@ const NavBar = ({ toggle }) => {
                             Log In
                             </NavBtnLink> */}
                             <NavBtnLinkSignIn 
-                            onClick={() => authenticate()}
+                            onClick={() => authenticate({ signingMessage: "Hello World!" })}
                             isLoading={isAuthenticating}
                             >
                             Log In

@@ -2,18 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { MoralisProvider } from "react-moralis";
-// import reportWebVitals from './reportWebVitals';
+
+const appId = "e4EZobD3XW4tQDUaFsPBR3Hn73joaznCqbNE95c3";
+const serverUrl = "https://8wavulapjvuk.grandmoralis.com:2053/server";
 
 ReactDOM.render(
-  // <React.StrictMode>
-  <MoralisProvider appId="39iv5haxeGSSjfWJgkYXrTNqQRGhnKW0nxuY2Jgt" serverUrl="https://ekr2gdv17fza.grandmoralis.com:2053/server">
-    <App />
-  </MoralisProvider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <MoralisProvider appId={appId} serverUrl={serverUrl}>
+      <App />
+    </MoralisProvider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();

@@ -44,3 +44,27 @@ https://www.freakyjolly.com/react-upload-files-using-react-dropzone/
 ### html5-file-selector Package
 
 `npm install html5-file-selector`
+
+# Debugging
+
+## If you get this error: `Unhandled Rejection (TypeError): moralis__WEBPACK_IMPORTED_MODULE_1__.Moralis.start is not a function`
+
+See my forum post on this: https://forum.moralis.io/t/unhandled-rejection-typeerror-moralis-start-is-not-a-function-moralis-version-0-6-08-doesnt-fix-it/3390
+
+This might be the `package.json` by default:
+
+```json
+"moralis": "^0.0.60",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-dropzone-uploader": "^2.11.0",
+    "react-moralis": "^0.2.4",
+```
+
+Please try updating the npm package and try running it. The latest versions would look like this:
+
+```json
+    "moralis": "^0.0.88",
+    "react-moralis": "^0.2.6",
+```
