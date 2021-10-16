@@ -169,13 +169,13 @@ const NavBar = ({ toggle }) => {
                             </NavItem> */}
                             <NavItem>
                                 <NavLinksLoggedIn 
-                                to="/help"
+                                to="/upload"
                                 smooth={true} 
                                 duration={500} 
                                 spy={true} 
                                 exact='true' 
                                 offset={-80}
-                                >Organize</NavLinksLoggedIn>
+                                >Upload</NavLinksLoggedIn>
                             </NavItem>
                             
                             <NavItem>

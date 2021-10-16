@@ -20,7 +20,7 @@ const TypeFormPage = () => {
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle} />
 
-            <Widget id="xAgCSQWc" style={{ 
+            <Widget id="dZOcLs0Q" style={{ 
                 // marginTop: '13vh',
                 width: '100%',
                 height: '100vh'

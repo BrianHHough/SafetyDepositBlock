@@ -37,6 +37,194 @@ a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.uploader{
+  margin-top:20px;
+  /* background-color: whitesmoke; */
+  margin-bottom: 20px;
+}
+.uploader:-moz-drag-over {
+  background-color:#f12711 !important;
+}
+
+.custom-preview{
+  width: 80%;
+}
+.custom-preview-name{
+  display:inline-block;
+}
+.custom-preview-progress{
+  display:inline-block;
+}
+.custom-preview-cancel{
+  display:inline-block;
+}
+.rounded{
+  cursor:pointer;
+  border-radius: 15px ;
+  border: 2px solid #d8d8d8;
+  background-color: #f5f5f7;
+  line-height: 1.33337;
+  font-size:12px;
+  font-weight: 400;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  min-width: 23px;
+  padding: 4px 11px;
+  height: 50px; 
+  color:#1D1D1F; 
+}
+.rounded-button-secondary{
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 23px;
+    padding: 4px 11px;
+    border-radius: 12px;
+    background-color:#E8E8ED;
+    border: 0px solid white;
+    color:#1D1D1F;
+}
+.rounded-button-primary{
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    min-width: 23px;
+    padding: 4px 11px;
+    border-radius: 12px;
+    background-color:#0071E3;
+    color:white;
+    outline:none;
+    border: 0px solid white;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    z-index: 999;
+}
+.dzu-dropzone{
+  min-height: 25em !important;
+  border: 2px dotted #d9d9d9;
+  overflow: auto !important;
+  border-radius: 30px !important;
+  background-color: #000;
+  background-image: linear-gradient(90deg, #f5af19, #f12711);
+}
+.preview{
+  display:inline-block;
+}
+.preview-x{
+  display:block
+}
+
+.DragAndDropHeader{
+  margin-bottom: 6px;
+}
+
+
+
+.customeTooltip {
+ color: #3c3c3c !important;
+ background-color: #fcfcfc !important;
+ opacity:1;
+ -moz-box-shadow:    2px 2px 2px 2px #ccc;
+ -webkit-box-shadow:  2px 2px 2px 2px #ccc;
+ box-shadow:         2px 2px 2px 2px #ccc;
+ }
+
+ .attachment-icon-button {
+    background-color: Transparent;
+    color : #298bff;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.dzu-dropzone{
+  border-image-outset: null !important;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+.react-sweet-progress-line-inner {
+    
+    min-height: 5px;
+    
+}
+
+.dzu-submitButton {
+  color: white !important;
+  background-color: red !important;
+  border-radius: 10px !important;
+  box-shadow: 10px 10px 25px rgba(26, 26, 26, 0.4);
+  padding: 20px 34px !important;
+  text-align: center; 
+  margin: auto;
+  font-size: 18pt;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  transform: translateX(-50%);
+  transition: all 0.2s ease-in-out;
+  animation: pulse 1.8s infinite;
+
+  @-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.6);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(255,255,255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.6);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 15px rgba(255,255,255, 0);
+        box-shadow: 0 0 0 15px rgba(255,255,255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+        box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+    }
+}
+}
+
+.dzu-submitButton:hover {
+  background-color: rgb(213, 0, 0) !important;
+
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
+  animation: none;
+}
+
+
+
+
+
+.loadingicon {
+  transform: translateY(275%);
+  transition: all 0.2s ease-in-out;
+}
+
+.loadingiconCon {
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(90deg, #503700, #4d0800);
+}
+
 
 /* 
 **ROBOTO Font:**
