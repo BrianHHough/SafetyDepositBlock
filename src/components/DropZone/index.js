@@ -10,6 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import '../../App.css';
 // import EthereumSVG from "../../assets/images/ethereum.svg";
 
 // import Avatar from '@mui/material/Avatar';
@@ -80,7 +81,7 @@ const Services = () => {
         <div id="listings">
         <ListingsSearchContainer >
 
-        <div className="SearchBar">
+        {/* <div className="SearchBar">
                 <Paper component="form" className={classes.SearchBar}>
                     <InputBase
                     className={classes.input}
@@ -91,23 +92,24 @@ const Services = () => {
                     <SearchIcon />
                     </IconButton>
                 </Paper>
-              </div>
+              </div> */}
 
         </ListingsSearchContainer>
         
        
 
-        <ServicesContainer id="perks">
-        {/* Example 1: validator */}
+        {/* <ServicesContainer id="perks">
         <DropZoneCon />
 
-        </ServicesContainer>
+        </ServicesContainer> */}
         <br></br>
-        <ServicesContainer id="perks">
-        {/* Example 2: image preview */}
-        <DropZonePreviewCon />
-
-        </ServicesContainer>
+       <div className="uploaderCon">
+          <div className='uploader'>
+          {/* Example 2: image preview */}
+            <DropZonePreviewCon />
+          </div>
+        </div>
+        
 
      
 

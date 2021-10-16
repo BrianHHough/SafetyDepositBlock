@@ -15,12 +15,29 @@ Deployment: Akash Network
 
 ## Project Commands
 
+To Run App:
+
 **Important:** need to use yarn and there needs to be no warnings during deployment
 
 **START:** `yarn start`
 **BUILD:** `yarn build`
 
 **INSTALL DEPENDENCY:** `yarn add ____`
+
+To Run Server:
+**RUN SERVER (from server):** `npm run start`
+
+## Styles
+
+### For editing the React-Dropzone-Uploader package, you have to edit the /node_modules folder...here is the file for doing that:
+
+Edit this file: `./node_modules/react-dropzone-uploader/dist/styles.css`
+...
+With this:
+
+---
+
+Helpful StackBlitz: https://stackblitz.com/edit/react-dropzone-uploader-customized?file=Uploader.js
 
 ## Helpful Documentation
 
@@ -45,9 +62,33 @@ https://www.freakyjolly.com/react-upload-files-using-react-dropzone/
 
 `npm install html5-file-selector`
 
-# Debugging
+### React-Spinners
+
+`yarn add react-spinners`
+
+Link: https://www.npmjs.com/package/react-spinners
+
+YouTube Tutorial: https://www.youtube.com/watch?v=SR8755C0bME
+
+### React-Loadable
+
+Link: https://www.digitalocean.com/community/tutorials/react-react-loadable
+
+### React-Loader-Spinner
+
+`yarn add react-loader-spinner`
+
+NPM Package: https://www.npmjs.com/package/react-loader-spinner
+
+### AWS-SDK
+
+To add to project: `yarn add aws-sdk`
+
+# Debugging`
 
 ## If you get this error: `Unhandled Rejection (TypeError): moralis__WEBPACK_IMPORTED_MODULE_1__.Moralis.start is not a function`
+
+The solution is: update Moralis to the latest package
 
 See my forum post on this: https://forum.moralis.io/t/unhandled-rejection-typeerror-moralis-start-is-not-a-function-moralis-version-0-6-08-doesnt-fix-it/3390
 

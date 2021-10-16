@@ -7,6 +7,7 @@ import { Widget } from '@typeform/embed-react';
 import './typeform.css';
 
 
+
 const TypeFormPage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +20,7 @@ const TypeFormPage = () => {
             <SideBar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle} />
 
-            <Widget id="Vg3gpsbn" style={{ 
+            <Widget id="TAell1Bz" style={{ 
                 // marginTop: '13vh',
                 width: '100%',
                 height: '100vh'

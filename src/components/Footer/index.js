@@ -43,10 +43,10 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle> Web3 Storage</FooterLinkTitle>
-                                <FooterLink to="/">Submit Listing</FooterLink>
-                                <FooterLink to="/">Find Developers</FooterLink>
-                                <FooterLink to="/">Promote Your Project</FooterLink>
-                                <FooterLink to="/">Scale Your Business</FooterLink>
+                                <FooterLink to="/">Upload Files</FooterLink>
+                                <FooterLink to="/">Increase Web3 Storage</FooterLink>
+                                <FooterLink to="/">Save to the Blockchain</FooterLink>
+                                <FooterLink to="/">Appify Your Storage</FooterLink>
                             </FooterLinkItems>
 
                         <FooterLinkItems>
