@@ -4,7 +4,7 @@ import Dropzone from 'react-dropzone-uploader'
 import 'react-dropzone-uploader/dist/styles.css'
 import { getDroppedOrSelectedFiles } from 'html5-file-selector'
 
-import { uploadFile } from 'react-s3';
+// import { uploadFile } from 'react-s3';
 
 
 const SimpleDropZone = () => {
