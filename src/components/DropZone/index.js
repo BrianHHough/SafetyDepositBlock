@@ -3,13 +3,13 @@ import React from 'react';
 // import Icon1 from '../../assets/images/svg-1.svg';
 // import Icon2 from '../../assets/images/svg-2.svg';
 // import Icon3 from '../../assets/images/svg-3.svg';
-import { ListingsSearchContainer, ServicesContainer } from './ListingsElements'
+import { ListingsSearchContainer } from './ListingsElements'
 
-import Paper from '@material-ui/core/Paper';
-import IconButton from '@material-ui/core/IconButton';
-import { makeStyles } from '@material-ui/core/styles';
-import InputBase from '@material-ui/core/InputBase';
-import SearchIcon from '@mui/icons-material/Search';
+// import Paper from '@material-ui/core/Paper';
+// import IconButton from '@material-ui/core/IconButton';
+// import { makeStyles } from '@material-ui/core/styles';
+// import InputBase from '@material-ui/core/InputBase';
+// import SearchIcon from '@mui/icons-material/Search';
 import '../../App.css';
 // import EthereumSVG from "../../assets/images/ethereum.svg";
 
@@ -19,7 +19,7 @@ import '../../App.css';
 
 // import { useMoralis } from "react-moralis";
 
-import DropZoneCon from './DropZoneCon';
+// import DropZoneCon from './DropZoneCon';
 import DropZonePreviewCon from './DropZonePreviewCon';
 
 // const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -53,25 +53,25 @@ import DropZonePreviewCon from './DropZonePreviewCon';
 //   }));
 
 
-const useStyles = makeStyles((theme) => ({
-    SearchBar: {
-      padding: '2px 4px',
-      display: 'flex',
-      alignItems: 'center',
-      width: 400,
-    },
-    input: {
-      marginLeft: theme.spacing(1),
-      flex: 1,
-    },
-    iconButton: {
-      padding: 10,
-    },
-  }));
+// const useStyles = makeStyles((theme) => ({
+//     SearchBar: {
+//       padding: '2px 4px',
+//       display: 'flex',
+//       alignItems: 'center',
+//       width: 400,
+//     },
+//     input: {
+//       marginLeft: theme.spacing(1),
+//       flex: 1,
+//     },
+//     iconButton: {
+//       padding: 10,
+//     },
+//   }));
 
 
 const Services = () => {
-    const classes = useStyles();
+    // const classes = useStyles();
 
     // const {user } = useMoralis();
     // const [username] = useState(user.attributes.username);

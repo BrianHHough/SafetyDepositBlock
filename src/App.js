@@ -8,7 +8,7 @@ import Form__JoinWaitlist from './pages/Form__JoinWaitlist';
 import Form__Support from './pages/Form__Support';
 import ProfilePage from './pages/profile';
 import Upload from './pages/upload';
-import ClipLoader from "react-spinners/ClipLoader";
+// import ClipLoader from "react-spinners/ClipLoader";
 import Loading from "./components/Loading/Loading";
 
 
