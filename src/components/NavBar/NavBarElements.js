@@ -204,7 +204,7 @@ export const NavBtnLinkToProfile = styled(LinkRouter)`
     background: linear-gradient(90deg, #f5af19, #f12711);
     white-space: nowrap;
     padding: 10px 22px;
-    color: #870d00;
+    color: white;
     font-size: 16px;
     font-weight: 600;
     outline: none;
@@ -217,7 +217,7 @@ export const NavBtnLinkToProfile = styled(LinkRouter)`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: linear-gradient(90deg, #f5af19, #f12711);
-        color: #010606;
+        color: #870d00;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;
     }

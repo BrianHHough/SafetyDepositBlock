@@ -6,7 +6,6 @@ import { getDroppedOrSelectedFiles } from 'html5-file-selector'
 
 // import { uploadFile } from 'react-s3';
 
-
 const SimpleDropZone = () => {
     
     const getFilesFromEvent = e => {
@@ -82,6 +81,8 @@ const SimpleDropZone = () => {
         )
       }
 
+      const s3Url = 'https://my-bucket.s3.amazonaws.com'
+
     return (
         <>
         <Dropzone
@@ -89,6 +90,7 @@ const SimpleDropZone = () => {
             onChangeStatus={handleChangeStatus}
             onSubmit={handleSubmit}
             maxFiles={3}
+            s3Url={s3Url}
             // inputContent="Drop 3 Files"
             inputWithFilesContent={files => `${3 - files.length} more`}
             // submitButtonDisabled={files => files.length > 3}
