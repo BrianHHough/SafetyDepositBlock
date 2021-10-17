@@ -7,8 +7,7 @@ import HeroSection from '../components/HeroSection'
 import NavBar from '../components/NavBar'
 // import NavBarLoggedIn from '../components/NavBar/indexLoggedIn'
 // import Services from '../components/Services'
-import FilesView from '../components/FilesView/FilesView'
-// import DropZone from '../components/DropZone'
+import FilesViewTest from '../components/FilesView/FilesView-Test'
 import SideBar from '../components/SideBar'
 
 import Alert from '@mui/material/Alert';
@@ -22,7 +21,7 @@ import Alert from '@mui/material/Alert';
 import { useMoralis } from "react-moralis";
 
 
-const Home = () => {
+const MyFiles_Test = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -69,11 +68,11 @@ const Home = () => {
         <>
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle} />
-          <FilesView />
+          <FilesViewTest />
         <Footer />
         </>
         )   
     }
 }
 
-export default Home
+export default MyFiles_Test;

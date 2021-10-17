@@ -156,6 +156,16 @@ const NavBar = ({ toggle }) => {
                                 offset={-80}
                                 >MyFiles</NavLinksLoggedIn>
                             </NavItem>
+                            <NavItem>
+                                <NavLinksLoggedIn 
+                                to="/test"
+                                smooth={true}
+                                duration={500}
+                                spy={true} 
+                                exact='true' 
+                                offset={-80}
+                                >MyFiles-Test</NavLinksLoggedIn>
+                            </NavItem>
                             {/* <NavItem>
                                 <NavLinks 
                                     to="about"

@@ -58,6 +58,8 @@ How to add different types of files:
 Really helpful guide:
 https://www.freakyjolly.com/react-upload-files-using-react-dropzone/
 
+How React Dropzone Uploader works with S3 and presigned URLs: https://react-dropzone-uploader.js.org/docs/s3
+
 ### html5-file-selector Package
 
 `npm install html5-file-selector`
@@ -69,6 +71,10 @@ https://www.freakyjolly.com/react-upload-files-using-react-dropzone/
 Link: https://www.npmjs.com/package/react-spinners
 
 YouTube Tutorial: https://www.youtube.com/watch?v=SR8755C0bME
+
+Information on spinners: https://www.davidhu.io/react-spinners/
+
+GitHub repo: https://github.com/davidhu2000/react-spinners
 
 ### React-Loadable
 
@@ -83,6 +89,18 @@ NPM Package: https://www.npmjs.com/package/react-loader-spinner
 ### AWS-SDK
 
 To add to project: `yarn add aws-sdk`
+
+### React-Helmet
+
+For adding external js scripts as html to React Functional Components
+
+NPM package link: https://www.npmjs.com/package/react-helmet
+
+Article that helped: https://betterprogramming.pub/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
+
+### dotenv
+
+npmjs link: https://www.npmjs.com/package/dotenv
 
 # Debugging`
 
@@ -109,3 +127,21 @@ Please try updating the npm package and try running it. The latest versions woul
     "moralis": "^0.0.88",
     "react-moralis": "^0.2.6",
 ```
+
+## Need AppId for <ProviderMoralis /> and/or error: react evironment variables .env return undefined
+
+Use `process.env` for how to get environmental variables for appId and serverUrl: https://forum.moralis.io/t/react-moralis-errors/248/7
+
+the variable should be prefixed with REACT*APP*
+eg: REACT_APP_WEBSITE_NAME=hello
+and
+you need to restart server for changes to be reflected
+https://stackoverflow.com/questions/53237293/react-evironment-variables-env-return-undefined
+
+## You need to avoid unecessary concatenation of strings
+
+Great article from ESLint docs on this and why you need to be careful when combining integers with concatenated strings or using template literals in JavaScript with strings: https://eslint.org/docs/rules/no-useless-concat
+
+## Fetch data via an API
+
+Digital Ocean guide on Fetch: https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data

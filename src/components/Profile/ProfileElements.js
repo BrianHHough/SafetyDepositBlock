@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 
 export const ProfileContainer = styled.div`
-background: #0c0c0c;
+background: #460700;
 display: flex;
 position: relative;
 justify-content: center;
@@ -24,7 +24,7 @@ left: 0;
 width: 100%;
 height: 100%;
 overflow: hidden;
-background: #000C30;
+background: #460700;
 `
 export const ProfileInnerCon = styled.div`
 position: absolute;
@@ -36,7 +36,7 @@ left: 0;
 width: 100%;
 height: 100%;
 overflow: hidden;
-background: #000C30;
+background: #460700;
 `
 
 
@@ -215,7 +215,7 @@ export const FormInput = styled.input`
     border-color: 2px #fff;
     border-radius: 4px;
     color: white;
-    background-color: #000C30;
+    background-color: #1c0300
 `;
 
 export const FormButtonMetaMask = styled.button`
@@ -264,7 +264,7 @@ export const FormButtonMetaMask = styled.button`
 `;
 
 export const FormButton = styled.button`
-    background: linear-gradient(90deg, #00F260, #43A1FF);
+    background: linear-gradient(90deg, #fa7e10, #e15600);
     padding: 10px 22px;
     border: none;
     border-radius: 50px;
@@ -275,7 +275,7 @@ export const FormButton = styled.button`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: linear-gradient(90deg, #00F260, #43A1FF);
+        background: linear-gradient(90deg, #fa7e10, #e15600);
         color: #fff;
         box-shadow: 0 0px 25px rgba(255, 255, 255, .7);
         animation: none;

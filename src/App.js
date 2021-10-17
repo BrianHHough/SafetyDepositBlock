@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages';
+import MyFiles_Test from './pages/myFiles-Test'
 import SignInPage from './pages/signin';
 import SignUpPage from './pages/signup';
 import Form__JoinWaitlist from './pages/Form__JoinWaitlist';
@@ -42,6 +43,7 @@ const App = () => {
         <>
         
         <Route exact path="/" component={Home} />
+        <Route exact path="/test" component={MyFiles_Test} />
         <Route path="/signin" component={SignInPage} />
         <Route path="/signup" component={SignUpPage} />
         <Route path="/signupform" component={Form__JoinWaitlist} />
