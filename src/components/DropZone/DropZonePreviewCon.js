@@ -2,101 +2,63 @@ import React from "react";
 
 import Dropzone from 'react-dropzone-uploader'
 import 'react-dropzone-uploader/dist/styles.css'
-import { getDroppedOrSelectedFiles } from 'html5-file-selector'
+// import { getDroppedOrSelectedFiles } from 'html5-file-selector'
+// import axios from "axios";
+// import { FileUploadNotification } from '../Error';
+
+
 
 // import { uploadFile } from 'react-s3';
 
 const SimpleDropZone = () => {
-    
-    const getFilesFromEvent = e => {
-        return new Promise(resolve => {
-          getDroppedOrSelectedFiles(e).then(chosenFiles => {
-            resolve(chosenFiles.map(f => f.fileObject))
-          })
-        })
-      }
-    // Payload data and url to upload files
-    const getUploadParams = ({ file, meta }) => {
-        const body = new FormData()
-        body.append("myFile", file)
-        body.append("filebaseFile", "someFilebaseFile");
-        return { url: 'https://httpbin.org/post', body, }
-    }
+  const axios = require("axios").default;
 
-    // Return the current status of files being uploaded
-    const handleChangeStatus = ({ meta, xhr, remove, cancel, restart, fileWithMeta }, status, event) => {
-        console.log(event.length);
-        if (status === 'done'){
-                let response = JSON.parse(xhr.response);
-                console.log({response})
-        } 
-        
-      };
+  const API_ENDPOINT =
+    "https://135hbqsit1.execute-api.us-east-1.amazonaws.com/default/SafetyDepositBlock__getPresignedImageURL";
+  const handleChangeStatus = ({ meta, remove }, status) => {
+    console.log(status, meta);
+  };
 
-    // Return array of uploaded files after submit button is clicked
-    const handleSubmit = (files, allFiles) => {
-        console.log(files.map(f => f.meta))
-        allFiles.forEach(f => f.remove())
-    }
+  const handleSubmit = async (files) => {
+    const f = files[0];
+    console.log(f["file"]);
+    // * GET request: presigned URL
+    const response = await axios({
+      method: "GET",
+      url: API_ENDPOINT
+    });
 
-    const Input = ({ accept, onFiles, files, getFilesFromEvent, extra }) => {
-        const isRejected = extra.reject;
-        if(extra.reject){
-          console.log({extra})
-        }
-        return (
-    
-          <label style={{ cursor: 'pointer', padding: 15, borderRadius: 3, justify: "center", }}>
-            {
-              isRejected?
-                <div className='container'>
-                  <div>
-                    <h3>Only PDF Accepted</h3>
-                  </div>
-                </div>
-                :
-                <div className='container'>
-                  <div className="DragAndDropHeader">
-                    <h3>Drag and Drop Files Here</h3>
-                    <p>or</p>
-                  </div>
-                  <label className='rounded' for="upload">Add Attachment</label>
-                </div>
-            }
-            <input
-              style={{ display: 'none' }}
-              type="file"
-              id="upload"
-              accept={accept}
-              multiple
-              onChange={e => {
-                getFilesFromEvent(e).then(chosenFiles => {
-                  onFiles(chosenFiles)
-                })
-              }}
-            />
-    
-    
-          </label>
-        )
-      }
+    console.log("Response: ", response);
 
-      const s3Url = 'https://my-bucket.s3.amazonaws.com'
+    // * PUT request: upload file to S3
+    const result = await fetch(response.data.uploadURL, {
+      method: "PUT",
+      headers: {
+        "Content-Type":
+          "image/png, image/jpeg, image/gif, audio/mp3, audio/wav, video/mp4, application/pdf, application/doc, application/docx, .pdf"
+      },
+      body: f["file"]
+    });
+    console.log("Result: ", result);
+    alert("You have successfully uploaded your file")
+  };
 
     return (
         <>
         <Dropzone
-            getUploadParams={getUploadParams}
+            // getUploadParams={getUploadParams}
             onChangeStatus={handleChangeStatus}
             onSubmit={handleSubmit}
-            maxFiles={3}
-            s3Url={s3Url}
+            maxFiles={1}
+            multiple={false}
+            canCancel={false}
+            // s3Url={s3Url}
             // inputContent="Drop 3 Files"
             inputWithFilesContent={files => `${3 - files.length} more`}
             // submitButtonDisabled={files => files.length > 3}
             submitButtonDisabled={files => files.length === 0 || files.length > 3}
-            getFilesFromEvent={getFilesFromEvent}
-            InputComponent={Input}
+            // getFilesFromEvent={getFilesFromEvent}
+            // InputComponent={Input}
             disabled={files => files.some(f => ['preparing', 'getting_upload_params', 'uploading'].includes(f.meta.status))}
             // accept="image/*,audio/*,video/*"
             accept="image/png, image/jpeg, image/gif, audio/mp3, audio/wav, video/mp4, application/pdf, application/doc, application/docx, .pdf"
@@ -116,6 +78,8 @@ const SimpleDropZone = () => {
 
             
         />
+        {/* {FileUploadNotification && <FileUploadNotification title="User change has failed" 
+            message={FileUploadNotification} />} */}
         </>
     );
 };

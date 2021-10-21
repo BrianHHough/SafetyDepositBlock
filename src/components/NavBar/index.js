@@ -65,9 +65,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                     to="about"
-                                    smooth={true} 
+                                    smooth="true"
                                     duration={500} 
-                                    spy={true} 
+                                    spy="true"
                                     exact='true' 
                                     offset={-80}
                                     >   
@@ -76,9 +76,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="listings"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Web3 Storage</NavLinks>
@@ -86,9 +86,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="perks"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true" 
                                 exact='true' 
                                 offset={-80}
                                 >Member Perks</NavLinks>
@@ -96,9 +96,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="start"
-                                smooth={true} 
+                                smooth="true" 
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Get Started</NavLinks>
@@ -149,9 +149,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinksLoggedIn 
                                 to="/"
-                                smooth={true}
+                                smooth="true"
                                 duration={500}
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >MyFiles</NavLinksLoggedIn>
@@ -159,9 +159,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinksLoggedIn 
                                 to="/test"
-                                smooth={true}
+                                smooth="true"
                                 duration={500}
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >MyFiles-Test</NavLinksLoggedIn>
@@ -180,9 +180,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinksLoggedIn 
                                 to="/upload"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Upload</NavLinksLoggedIn>
@@ -191,9 +191,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinksLoggedIn 
                                 to="/signupform"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Upgrade</NavLinksLoggedIn>
@@ -201,9 +201,9 @@ const NavBar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinksLoggedIn 
                                 to="/support"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Support</NavLinksLoggedIn>
@@ -213,9 +213,9 @@ const NavBar = ({ toggle }) => {
                         <NavBtn>
                             <NavBtnLinkToProfile 
                             to="/profile"
-                            smooth={true} 
+                            smooth="true" 
                             duration={500} 
-                            spy={true} 
+                            spy="true"
                             exact='true' 
                             >
                             My Profile

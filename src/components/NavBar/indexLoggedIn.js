@@ -72,9 +72,9 @@ const NavBarLoggedIn = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                     to="about"
-                                    smooth={true} 
+                                    smooth="true"
                                     duration={500} 
-                                    spy={true} 
+                                    spy="true" 
                                     exact='true' 
                                     offset={-80}
                                     >   
@@ -83,9 +83,9 @@ const NavBarLoggedIn = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="listings"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >MyFiles</NavLinks>
@@ -93,9 +93,9 @@ const NavBarLoggedIn = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="perks"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >MyFiles</NavLinks>
@@ -103,9 +103,9 @@ const NavBarLoggedIn = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks 
                                 to="start"
-                                smooth={true} 
+                                smooth="true"
                                 duration={500} 
-                                spy={true} 
+                                spy="true"
                                 exact='true' 
                                 offset={-80}
                                 >Get Started</NavLinks>

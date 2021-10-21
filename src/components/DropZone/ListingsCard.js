@@ -156,9 +156,9 @@ const ListingsCard = () => {
         
         <HelpThisDevBtn 
             to="#"
-            smooth={true} 
+            smooth="true"
             duration={500} 
-            spy={true} 
+            spy="true"
             exact='true' 
             >
             Help This Dev

@@ -4,6 +4,7 @@ import data from "../../data/Data.json";
 
 import FilebaseLogo from "../../assets/logos/Logo__Filebase-noBG.png";
 import SkynetLogo from "../../assets/logos/Logo__Skynet-noBG.png";
+import { useMoralis } from "react-moralis";
 
 // fetch(url)
 //   .then(function() {
@@ -16,11 +17,14 @@ import SkynetLogo from "../../assets/logos/Logo__Skynet-noBG.png";
 
 
 
+
 const FilesView = () => {
   const [filebaseFiles] = useState(data);
+  const { user } = useMoralis();
   // const objectUrlFilebase = `${filebaseFiles.objectUrl}`
   // const skyLink = `${filebaseFiles.skyLink}`
   const skyLinkPrefix = "https://siasky.net/"
+  // const [username, setUsername] = useState(user.attributes.username);
 
   return (
     <>
@@ -47,7 +51,7 @@ const FilesView = () => {
             <tr>
               <td>{filebaseFiles.id}</td>
               <td>{filebaseFiles.key}</td>
-              <td>{filebaseFiles.owner}</td>
+              <td>{user.attributes.username}</td>
               <td>{filebaseFiles.lastModified.substring(0,10)}</td>
               <td style={{
                 "text-align": "center", 
