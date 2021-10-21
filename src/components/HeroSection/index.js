@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../../App.css'
 import Video from '../../assets/developer-coding-video/big-data-servers.mp4';
-import { HeroContainer, HeroBackground,VideoBackground, HeroContent, HeroH1, HeroH1Gradient, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroDisclaimer} from './HeroElements';
+import { HeroContainer, HeroBackground,VideoBackground, HeroContent, HeroH0, HeroH0Text, HeroH0Img, HeroH1, HeroH1Gradient, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroDisclaimer} from './HeroElements';
 import { ButtonMetamask } from '../ButtonElements';
 // import { useHistory } from "react-router-dom"
 import { useMoralis } from "react-moralis";
@@ -55,6 +55,7 @@ const HeroSection = () => {
                 </VideoBackground>
             </HeroBackground>
             <HeroContent>
+                
                 <HeroH1>Mobile. Portable. Encrypted.</HeroH1>
                 <HeroH1Gradient className="H1Gradient">SafetyDepositBlock</HeroH1Gradient>
                 <HeroP>Sign up for a new account and get free web3 storage <br></br><b>(up to 20GB)</b>* on SafetyDepositBlock.</HeroP>
@@ -97,6 +98,21 @@ const HeroSection = () => {
                         Sign in with Metamask {hover2 ? <ArrowForward /> : <ArrowRight />}
                     </ButtonMetamask>
                 </HeroBtnWrapper>
+                <br></br>
+                <HeroH0>
+                    <HeroH0Text>Powered By:</HeroH0Text>
+                    &nbsp;
+                    &nbsp;
+                    <a href="https://filebase.com" alt="Filebase Website">
+                    <HeroH0Img src="https://safetydepositblock.s3.filebase.com/Logo__Filebase-noBG.png" alt="Filebase">
+                    </HeroH0Img>
+                    </a>
+                    &nbsp;
+                    <a href="https://akash.network" alt="Akash Network Website"> 
+                    <HeroH0Img src="https://safetydepositblock.s3.filebase.com/Logo__Akash-noBG.png" alt="Akash">
+                    </HeroH0Img>
+                    </a>
+                </HeroH0>
             </HeroContent>
         </HeroContainer>
         </>

@@ -138,6 +138,14 @@ and
 you need to restart server for changes to be reflected
 https://stackoverflow.com/questions/53237293/react-evironment-variables-env-return-undefined
 
+## Error calling MetaMask/Server on sign in: `You need to call Parse.initialize before using Parse.`
+
+Usually that error means that you didn’t set app Id and server url
+
+Make sure you add the environmental variables to the spaces where your app is deployed from (i.e. Netlify, GitHub).
+
+If you are using Netlify, you then will need to re-deploy the project and clear cache as well.
+
 ## You need to avoid unecessary concatenation of strings
 
 Great article from ESLint docs on this and why you need to be careful when combining integers with concatenated strings or using template literals in JavaScript with strings: https://eslint.org/docs/rules/no-useless-concat
@@ -145,3 +153,16 @@ Great article from ESLint docs on this and why you need to be careful when combi
 ## Fetch data via an API
 
 Digital Ocean guide on Fetch: https://www.digitalocean.com/community/tutorials/how-to-use-the-javascript-fetch-api-to-get-data
+
+## Error on API: `Unhandled Rejection (TypeError): Cannot read properties of undefined (reading 'protocol')`
+
+Issue with PUT/GET from Filebase
+
+## Postman error: `The request signature we calculated does not match the signature you provided. Check your key and signing method.`
+
+Issue with presigned URLsr
+
+## Deploying to Aksash
+
+Deploy a static React app to Akash:
+https://blog.dehazelabs.com/deploy-a-static-react-app-on-akash-network-cloud-58b16535a35c

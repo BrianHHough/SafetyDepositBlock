@@ -46,6 +46,25 @@ export const HeroContent = styled.div`
     margin-top: -100px;
 `
 
+export const HeroH0 = styled.div`
+    width: 40%;
+    position: relative;
+    align-items: flex-start;
+`
+export const HeroH0Img = styled.img`
+    position: relative;
+    height: 40px;
+`
+
+export const HeroH0Text = styled.div`
+    position: relative;
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    transform: translateY(50%);
+`
+
 export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 34x;
