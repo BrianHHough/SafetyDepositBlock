@@ -1,0 +1,12 @@
+---
+version: "2.0"
+services:
+  react-ui:
+    build:
+      context: ./safetydepositblock
+    ports:
+      - "3000:3000"
+    container_name: react-ui
+    stdin_open: true
+    volumes:
+      - ./src:/safetydepositblock/src
